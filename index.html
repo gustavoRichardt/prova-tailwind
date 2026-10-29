@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-<title>Document</title>
+    <title>Document</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="overflow-x-hidden">
 
     <!--Cabeçalho-->
 
@@ -127,8 +124,8 @@
 
         <!--Underline-->
 
-            <div class="underline">
-                <img src="imagens/traço-divisao.svg" alt="Underline usado para realizar a divisão das sessões, quando necessário.">
+            <div class="underline flex justify-center my-12 w-full">
+                <img src="imagens/traço-divisao.svg" alt="Underline usado para realizar a divisão das sessões, quando necessário." class="w-[90%]">
             </div>
 
             <!--About Us-->
@@ -207,43 +204,39 @@
 
     <!--Lista de Benefícios-->
         
-<div class="lista-beneficios">
-    <div class="lista-esquerda">
-        <ul>
-            <li>
-                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde.">
+<div class="flex justify-center">
+        <ul class="flex flex-col items-center gap-3 font-['Open_Sans'] text-[clamp(1rem, 1rem + 0vw, 1rem);] text-[#183B56]">
+            <li class="flex items-center gap-2">
+                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde." class="h-3 w-3">
                 <a>100% Trusted</a>
             </li>
 
         <div class="suporte">
-            <li>
-                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde.">
+            <li class="flex items-center gap-2">
+                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde." class="h-3 w-3">
                 <a>Indomaret Support</a>
             </li>
         </div>
 
         <div class="ovo">
-            <li>
-                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde.">
+            <li class="flex items-center gap-2">
+                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde." class="h-3 w-3">
                 <a>LinkAja or Ovo. Bebas</a>
             </li>
             </div>
-        </div>
 
-        <div class="lista-direita">
-            <li>
-                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde.">
+            <li class="flex items-center gap-2">
+                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde." class="h-3 w-3">
                 <a>Customer Support 24/7</a>
             </li>
 
         <div class="rapido">
-            <li>
-                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde.">
+            <li class="flex items-center gap-2">
+                <img src="imagens/simbolo-check.svg" alt="Símbolo de check na cor verde." class="h-3 w-3">
                 <a>Get paid quickly</a>
             </li>
         </div>
         </ul>
-            </div>
             </div>
         
         </div>
@@ -254,123 +247,132 @@
 
     <!--Seção How Us Work-->
 
-    <section class="how-us-work">
+    <section class="mx-4 mt-20">
 
-    <div class="how-us-work-introducao">
+    <div class="text-center">
 
-        <h2>Do you want to know, How Us Work?</h2>
-        <p>Let me show you the flow of our work. We want to transparent to you. 
+        <h2 class=" ml-5 font-['Outfit'] text-[clamp(1.5rem,1.3571rem+0.7143vw,2rem)] font-bold text-[#183B56] text-center">
+            Do you want to know, How Us Work?
+        </h2>
+        <p class="mb-6 mt-3 ml-3 mr-3 font-['Open_Sans'] text-[clamp(1rem, 1rem + 0vw, 1rem);] text-[#183B56]">Let me show you the flow of our work. We want to transparent to you. 
             We believe, you must know what we work for you. We want to educate you what you face today.</p>
     </div>
 
     <!--Card 1-->
 
-    <div class="how-us-work-passo1">
+    <div class="relative mx-auto w-full max-w-[340px]">
 
         <img src="imagens/passo1-how-us-work.svg" alt="Pessoas em volta de um notebook pesquisando sobre um projeto. 
-        Com um card com o número 1 acima da imagem, simbolizando o primeiro passo.">
+        Com um card com o número 1 acima da imagem, simbolizando o primeiro passo." class="w-full rounded-lg object-cover">
     </div>
 
-        <div class="marcador-titulo-passo1">
-            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo.">
-            <h3>Research First</h3>
+        <div class="mx-auto mt-3 flex max-w-[340px] items-center gap-2">
+            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo." class="h-4">
+            <h3 class="font-['Outfit'] text-[clamp(1.25rem, 1.25rem + 0vw, 1.25rem)] font-bold text-[#183B56]">
+                Research First
+            </h3>
         </div>
         
-    <div class="p-passo1">
-        <p>First of all, we usually research first . We take research for know grassroot of problem from our client.</p>
+    <div class="mx-auto mt-2 max-w-[340px] ml-3">
+        <p class="font-['Open_Sans'] text-[clamp(1.25rem, 1.25rem + 0vw, 1.25rem)] text-[#5A7184]">
+            First of all, we usually research first . We take research for know grassroot of problem from our client.
+        </p>
     </div>
     
     <!--Card 2-->
 
-    <div class="how-us-work-passo2">
+    <div class="relative mx-auto w-full max-w-[340px]">
 
         <img src="imagens/passo2-how-us-work.svg" alt="Homem sentado em sua mesa de trabalho olhando para o horizonte em busca de soluções.
-        Com um card com o número 2 acima da imagem, simbolizando o segundo passo.">
+        Com um card com o número 2 acima da imagem, simbolizando o segundo passo." class="w-full rounded-lg object-cover">
     </div>
 
-        <div class="marcador-titulo-passo2">
-            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo.">
-            <h3>Wireframe Second</h3>
+        <div class="mx-auto mt-3 flex max-w-[340px] items-center gap-2">
+            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo." class="h-4">
+            <h3 class="font-['Outfit'] text-[clamp(1.25rem, 1.25rem + 0vw, 1.25rem)] font-bold text-[#183B56]">
+                Wireframe Second
+            </h3>
         </div>
 
-    <div class="p-passo2">
-        <p>The Second Flow, we move into wireframing process. It use to mapping the problem through find the solution</p>
+    <div class="mx-auto mt-2 max-w-[340px] ml-3">
+        <p class="font-['Open_Sans'] text-[clamp(1.25rem, 1.25rem + 0vw, 1.25rem)] text-[#5A7184]">
+            The Second Flow, we move into wireframing process. It use to mapping the problem through find the solution
+        </p>
     </div>
 
-    <!--Card 3-->
+    
+<!-- Card 3 -->
+<div class="relative mx-auto w-full max-w-[340px]">
+    <img
+        src="imagens/passo3-how-us-work.svg"
+        alt="Mulher comendo um doce, simbolizando a etapa final do processo."
+        class="w-full rounded-lg object-cover"
+    >
+</div>
 
-    <div class="how-us-work-passo3">
+<div class="mx-auto mt-3 flex max-w-[340px] items-center gap-2">
+    <img
+        src="imagens/marcador-amarelo.svg"
+        alt="Marcador amarelo."
+        class="h-4"
+    >
 
-        <img src="imagens/passo3-how-us-work.svg" alt="Mulher comendo um doce, simbolizando a etapa final do processo.
-         Com um card com o número 3 acima da imagem, simbolizando o terceiro passo.">
+    <h3 class="font-['Outfit'] text-[clamp(1.25rem,1.25rem+0vw,1.25rem)] font-bold text-[#183B56]">
+        Execute for Last
+    </h3>
+</div>
+
+<div class="mx-auto mt-2 mb-10 ml-3 max-w-[340px]">
+    <p class="font-['Open_Sans'] text-[clamp(1rem,1rem+0vw,1rem)] text-[#5A7184]">
+        At last but not least. This is the last step is Execute. We execute the idea that we get from Wireframing process.
+    </p>
+</div>
+
+<div class="recomendacoes mt-10">
+    <div class="imagem-recomendacoes">
+        <img
+            src="imagens/casa-how-us-work.png"
+            alt="Casa de madeira branca."
+            class="mx-auto mb-6 block h-auto max-w-full rounded-xl"
+        >
     </div>
 
-         <div class="marcador-titulo-passo3">
-            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo.">
-            <h3>Execute for Last</h3>
-         </div>
+    <p class="mx-6 mb-8 text-center font-['Open_Sans'] text-[clamp(14px,14px+0vw,14px)] leading-[26px] text-[#183B56]">
+        We give you thousand recommendations of Apartment, House also Hotel that can make your life become easier than before. Let’s search what you want below. Cheerio guys.
+    </p>
+</div>
 
-    <div class="p-passo3">
-         <p>At last but not least. This is the last step is Execute. We execute the idea that we get from Wireframing process.</p>
-    </div>
+<div class="how-us-work-about-us">
+    <button class="mx-auto block rounded-[6px] border border-[#36B37E] bg-white px-6 py-2 font-['Outfit'] text-[16px] font-bold text-[#36B37E]">
+        About Us
+    </button>
 
-    <!--Card Fotos Desktop-->
+    <p class="mx-6 mt-8 mb-8 text-center font-['Open_Sans'] text-[clamp(14px,14px+0vw,14px)] leading-[26px] text-[#183B56]">
+        After we give you so so so much more recommendations. You can choose whatever you want based on your needs. Don’t forget to apply code for discount 50%. Just for today!
+    </p>
+</div>
 
-    <div class="card-fotos-desktop">
+<button class="mx-auto mb-16 block rounded-[6px] border border-[#36B37E] bg-white px-6 py-2 font-['Outfit'] text-[16px] font-bold text-[#36B37E]">
+    Start Searching
+</button>
+</section>
 
-        <img src="imagens/passo1-how-us-work.svg" alt="Pessoas em volta de um notebook pesquisando sobre um projeto. 
-        Com um card com o número 1 acima da imagem, simbolizando o primeiro passo.">
+<section class="dany-olmo mx-4 mb-20 rounded-[16px] bg-[#F9FBFE] px-8 py-10">
+    <img
+        src="imagens/dany-olmo.svg"
+        alt="Foto de Dany Olmo, cliente da Homey."
+        class="mx-auto mb-8 block h-[140px] w-[140px] rounded-full object-cover"
+    >
 
-        <img src="imagens/passo2-how-us-work.svg" alt="Homem sentado em sua mesa de trabalho olhando para o horizonte em busca de soluções.
-        Com um card com o número 2 acima da imagem, simbolizando o segundo passo.">
+    <p class="mb-8 text-center font-['Open_Sans'] text-[clamp(14px,14px+0vw,14px)] leading-[26px] text-[#183B56]">
+        “We purchased our property in Katoomba from Homey Real Estate about 7 years ago. Homey’s made the process so easy that when it came time to sell we knew immediately where to turn”
+    </p>
 
-        <img src="imagens/passo3-how-us-work.svg" alt="Mulher comendo um doce, simbolizando a etapa final do processo.
-         Com um card com o número 3 acima da imagem, simbolizando o terceiro passo.">
-    </div>
-
-    <!--Card 1 - Desktop-->
-
-    <div class="marcador-titulo-passo1-desktop">
-            <img src="imagens/marcador-amarelo.svg" alt="Marcador amarelo.">
-            <h3>Research First</h3>
-        </div>
-        
-    <div class="p-passo1-desktop">
-        <p>First of all, we usually research first . We take research for know grassroot of problem from our client.</p>
-    </div>
-
-    <div class="recomendacoes">
-        <div class="imagem-recomendacoes">
-            <img src="imagens/casa-how-us-work.png" alt="Casa de madeira com dois andares na cor branca.">
-        </div>
-            <p>We give you thousand recommendations of Apartment, House also Hotel that can make your life become easier than before.
-                Let’s search what you want below. Cheerio guys.</p>
-    </div>
-
-    <!--Botão About Us-->
-
-    <div class="how-us-work-about-us">
-        <button class="button-about-us">About Us</button>
-
-        <p>After we give you so so so much more recommendations. 
-            You can choose whatever you want based on your needs. Don’t forget to apply code for discount 50%. Just for today!</p>
-    </div>
-        
-    <!--Botão Start Searching-->
-
-        <button class="start-searching">Start Searching</button>
-    </section>
-
-    <!--Dany Olmo-->
-
-    <section class="dany-olmo">
-
-        <img src="imagens/dany-olmo.svg" alt="Foto de rosto de Dany Olmo, Cliente da Homey.">
-        <p>“We purchased our property in Katoomba from Homey Real Estate about 7 years ago. 
-            Homey’s made the process so easy that when it came time to sell we knew immediately where to turn”</p>
-
-        <h3>- Dany Olmo - Customer of Homey”</h3>
-    </section>
+    <h3 class="text-center font-['Outfit'] text-[16px] font-bold leading-6 text-[#183B56]">
+        - Dany Olmo -<br>
+        Customer of Homey
+    </h3>
+</section>
 
     <section class="dados">
 
@@ -378,66 +380,66 @@
 
         <!--Dinheiro e Total de Hospedeiros-->
 
-<div class="conjunto-dados">
-    <div class="conjunto-dados1">
+<div class="conjunto-dados grid grid-cols-2 gap-8 my-12 mx-6 text-center lg:hidden">
+    <div class="conjunto-dados1 flex flex-col gap-8">
         <div class="dinheiro">
 
-            <img src="imagens/dinheiro.svg" alt="Desenho de uma nota de dinheiro.">
-            <h3>34M</h3>
-            <p>Money In & Out</p>
+            <img src="imagens/dinheiro.svg" alt="Desenho de uma nota de dinheiro." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E2F9F0]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">34M</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Money In & Out</p>
         </div>
 
         <div class="total-hospedeiros">
 
-            <img src="imagens/total-hospedeiros.svg" alt="Desenho de uma pessoa com um símbolo de chech do lado.">
-            <h3>208K</h3>
-            <p>Total Host of Homey</p>
+            <img src="imagens/total-hospedeiros.svg" alt="Desenho de uma pessoa com um símbolo de chech do lado." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E5F1FF]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">208K</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Total Host of Homey</p>
         </div>
     </div>
 
         <!--Novos Hospedeiros e Clientes Felizes-->
 
-    <div class="conjunto-dados2">
+    <div class="conjunto-dados2 flex flex-col gap-8">
         <div class="novos-hospedeiros">
 
-            <img src="imagens/novos-hospedeiros.svg" alt="Duas pessoas lado a lado.">
-            <h3>31K</h3>
-            <p>New hosts per month</p>
+            <img src="imagens/novos-hospedeiros.svg" alt="Duas pessoas lado a lado." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E5F1FF]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">31K</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">New hosts per month</p>
         </div>
 
         <div class="clientes-felizes">
 
-            <img src="imagens/clientes-felizes.svg" alt="Desenho de uma carinha com um sorriso.">
-            <h3>3B+</h3>
-            <p>Total happy Customer</p>
+            <img src="imagens/clientes-felizes.svg" alt="Desenho de uma carinha com um sorriso." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E2F9F0]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">3B+</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Total happy Customer</p>
         </div>
     </div>
 </div>
 
-<div class="conjunto-dados-desktop">
+<div class="conjunto-dados-desktop hidden lg:flex justify-around my-16 text-center">
 
     <div class="dinheiro-desktop">
-            <img src="imagens/dinheiro.svg" alt="Desenho de uma nota de dinheiro.">
-            <h3>34M</h3>
-            <p>Money In & Out</p>
+            <img src="imagens/dinheiro.svg" alt="Desenho de uma nota de dinheiro." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E2F9F0]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">34M</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Money In & Out</p>
         </div>
 
         <div class="total-hospedeiros-desktop">
-            <img src="imagens/total-hospedeiros.svg" alt="Desenho de uma pessoa com um símbolo de chech do lado.">
-            <h3>208K</h3>
-            <p>Total Host of Homey</p>
+            <img src="imagens/total-hospedeiros.svg" alt="Desenho de uma pessoa com um símbolo de chech do lado." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E5F1FF]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">208K</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Total Host of Homey</p>
         </div>
 
         <div class="novos-hospedeiros-desktop">
-            <img src="imagens/novos-hospedeiros.svg" alt="Duas pessoas lado a lado.">
-            <h3>31K</h3>
-            <p>New hosts per month</p>
+            <img src="imagens/novos-hospedeiros.svg" alt="Duas pessoas lado a lado." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E5F1FF]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">31K</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">New hosts per month</p>
         </div>
 
         <div class="clientes-felizes-desktop">
-            <img src="imagens/clientes-felizes.svg" alt="Desenho de uma carinha com um sorriso.">
-            <h3>3B+</h3>
-            <p>Total happy Customer</p>
+            <img src="imagens/clientes-felizes.svg" alt="Desenho de uma carinha com um sorriso." class="mx-auto mb-2 w-[55px] h-[55px] p-3.5 rounded-full bg-[#E2F9F0]">
+            <h3 class="font-['Outfit'] text-3xl font-bold text-[#183B56] mb-1">3B+</h3>
+            <p class="font-['Open_Sans'] text-sm text-[#5A7184]">Total happy Customer</p>
         </div>
 
 </div>
@@ -446,70 +448,70 @@
 
     <!--Cadastre-se-->
 
-    <section class="cadastre-se">
+    <section class="cadastre-se bg-[#1565D8] rounded-2xl py-14 px-6 text-center m-4 text-white font-['Open_Sans']">
 
-        <h2>Sign Up Now to see Newest Update about Real Estate</h2>
-        <p>Just insert your email into the field below. You already can to know update about Real Estate from entire the world.  
+        <h2 class="font-['Outfit'] text-[1.75rem] font-bold mb-4 leading-tight">Sign Up Now to see Newest Update about Real Estate</h2>
+        <p class="text-[15px] mb-10 text-[#E5EAF4] leading-relaxed">Just insert your email into the field below. You already can to know update about Real Estate from entire the world.  
             What are you waiting for?</p>
 
         <!--Botão Email-->
 
-        <button class="email">
-            <p>Your email</p>
-            <img src="imagens/email.svg" alt="Símbolo da caixa de entrada do email.">
+        <button class="email flex justify-between items-center bg-white rounded-lg p-1.5 pl-4 w-full mb-4 border-none">
+            <p class="text-[#5A7184] m-0 text-left">Your email</p>
+            <img src="imagens/email.svg" alt="Símbolo da caixa de entrada do email." class="bg-[#1565D8] p-3 rounded-md w-[45px] h-[45px]">
         </button>
 
-        <p>You can Unsubsribe anytime when you feels our notif is diturbing</p>
+        <p class="text-xs text-[#E5EAF4] mb-0">You can Unsubsribe anytime when you feels our notif is diturbing</p>
     </section>
 
 </main>
 
-    <footer class="rodape">
+    <footer class="rodape py-12 px-6 font-['Open_Sans']">
 
         <!--Rodapé-->
 
-    <div class="conjunto-rodape1">
+    <div class="conjunto-rodape1 grid grid-cols-2 gap-4 mb-10 lg:flex lg:justify-around">
         <ul class="rodape-product">
-            <p>Product</p>
-            <li><a>Landingpage</a></li>
-            <li><a>Features</a></li>
-            <li><a>Documentation</a></li>
-            <li><a>Referral Program</a></li>
-            <li><a>Pricing</a></li>
+            <p class="text-[#183B56] font-['Outfit'] font-bold text-lg mb-5">Product</p>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Landingpage</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Features</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Documentation</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Referral Program</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Pricing</a></li>
         </ul>
 
         <ul class="rodape-services">
-            <p>Services</p>
-            <li><a>Documentation</a></li>
-            <li><a>Design</a></li>
-            <li><a>Themes</a></li>
-            <li><a>Illustrations</a></li>
-            <li><a>UI Kit</a></li>
+            <p class="text-[#183B56] font-['Outfit'] font-bold text-lg mb-5">Services</p>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Documentation</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Design</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Themes</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Illustrations</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">UI Kit</a></li>
         </ul>
     </div>
 
-    <div class="conjunto-rodape2">
+    <div class="conjunto-rodape2 grid grid-cols-2 gap-4 mb-10 lg:flex lg:justify-around">
         <ul class="rodape-company">
-            <p>Company</p>
-            <li><a>About</a></li>
-            <li><a>Terms</a></li>
-            <li><a>Privacy Policy</a></li>
-            <li><a>Careers</a></li>
+            <p class="text-[#183B56] font-['Outfit'] font-bold text-lg mb-5">Company</p>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">About</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Terms</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Privacy Policy</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Careers</a></li>
         </ul>
 
         <ul class="rodape-more">
-            <p>More</p>
-            <li><a>Documentation</a></li>
-            <li><a>License</a></li>
-            <li><a>Changelog</a></li>
+            <p class="text-[#183B56] font-['Outfit'] font-bold text-lg mb-5">More</p>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Documentation</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">License</a></li>
+            <li class="mb-3"><a class="text-[#5A7184] text-[15px]">Changelog</a></li>
         </ul>
     </div>
 
         <!--Final do Rodapé-->
 
-    <div class="rodape-fim">
+    <div class="rodape-fim border-t border-[#E5EAF4] pt-8 flex flex-col items-center text-center gap-6 lg:flex-row lg:justify-between">
         <img src="imagens/logo.svg" alt="Logo da EHYA.">
-        <p>Build a modern and creative website with crealand</p>
+        <p class="text-[#5A7184] text-[15px] font-semibold">Build a modern and creative website with crealand</p>
         <img src="imagens/logo-redes-sociais.svg">
     </div>
 
